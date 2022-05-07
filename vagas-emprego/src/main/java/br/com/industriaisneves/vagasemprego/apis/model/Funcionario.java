@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+//é um Design Pattern onde os dados são obtidos do banco de dados e ocorre também a regra de negócio.
+// Este retorna as Entidades (classes anotadas com @Entity).
 public class Funcionario {
     @Id
     private Long id;
