@@ -3,6 +3,7 @@ package br.com.industriaisneves.vagasemprego.apis;
 import br.com.industriaisneves.vagasemprego.apis.model.Funcionario;
 import br.com.industriaisneves.vagasemprego.apis.services.FuncionarioServices;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -20,6 +21,12 @@ public class JavaController {
     public ModelAndView telaInical(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("telaInicio");
+        return mv;
+    }
+    @RequestMapping("/cadastro")
+    public ModelAndView cadastro(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("event/cadastro");
         return mv;
     }
     @GetMapping(path = "/goku")

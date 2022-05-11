@@ -1,5 +1,7 @@
 package br.com.industriaisneves.vagasemprego.apis.model;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
